@@ -1,0 +1,717 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #232f3e;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  z-index: 10;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.logo-image {
+  height: 45px;
+  width: auto;
+}
+
+.auth-wrapper.auth-cover {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.auth-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh)* 100);
+  width: 100%;
+}
+
+.auth-wrapper.auth-cover .auth-inner {
+  height: 100vh;
+  overflow-y: auto;
+  height: calc(var(--vh, 1vh)* 100);
+}
+
+.auth-wrapper .auth-inner {
+  width: 100%;
+}
+
+.auth-wrapper .auth-bg {
+  background-color: #FFFFFF;
+}
+
+.register-panel.register-v2 {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.register-panel {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh)*100);
+  width: 100%;
+}
+
+.register-panel.register-v2 .register-inner {
+  max-width: 450px;
+}
+
+.register-panel .register-inner {
+  width: 100%;
+  position: relative;
+}
+
+.register-panel .card {
+  border-radius: 0px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+}
+
+.nav-item-responsive {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+  /* Remove the border color if present */
+}
+
+.custom-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav .nav-item .nav-link .btn:hover {
+  color: #232f3e;
+}
+
+.cart-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.auth-btn {
+  width: 150px;
+}
+
+.user-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.2rem;
+  clear: both;
+  font-weight: 400;
+  color: #232f3e;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #232f3e;
+}
+
+.dropdown-menu {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: slideIn;
+}
+
+.board {
+  margin-top: 71px;
+  margin-bottom: 100px;
+}
+
+.main-board {
+  margin-top: 100px;
+}
+
+.search-board {
+  background-color: #516885;
+}
+
+.search-board .search-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.search-board .search-subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-board>div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* You can adjust this value to add more space */
+}
+
+.search-board .search-input {
+  width: 100%;
+  margin: 0;
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #232f3e;
+}
+
+.search-board-style {
+  padding: 30px 20px;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: stretch;
+  /* Aligns the items vertically */
+}
+
+.search-input-group .search-input {
+  border-right: none;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.search-input-group .btn {
+  border-left: none;
+  /* Removes the left border on the button to blend with the input */
+}
+
+.btn-shop-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #232f3e;
+  --bs-btn-border-color: #232f3e;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #232f3e;
+  --bs-btn-hover-border-color: #232f3e;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #232f3e;
+  --bs-btn-active-border-color: #232f3e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #232f3e;
+  --bs-btn-disabled-border-color: #232f3e;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+}
+
+.product-card:hover {
+  transform: translateY(-1px) scale(1.01);
+  /* Move up slightly and scale up to 105% */
+  box-shadow: 0 4px 25px 0 rgba(34, 41, 47, 0.35);
+}
+
+.product-action {
+  display: flex;
+  /* Enable Flexbox */
+  justify-content: center;
+  /* Center items horizontally */
+  gap: 20px;
+  /* Space between items */
+}
+
+.s-image-overlay-grey {
+  overflow: hidden;
+}
+
+.puis-spacing-small {
+  margin-bottom: 8px !important;
+}
+
+.s-padding-right-small {
+  padding-right: 8px !important;
+}
+
+.s-padding-left-small {
+  padding-left: 8px !important;
+}
+
+.a-spacing-base,
+.a-ws .a-ws-spacing-base {
+  margin-bottom: 12px !important;
+}
+
+.puis-image-overlay-grey,
+.s-image-overlay-grey {
+  overflow: hidden;
+}
+
+.a-relative,
+.aok-relative {
+  position: relative;
+}
+
+.primary-link {
+  text-decoration: none;
+  color: #007185;
+}
+
+.s-no-outline {
+  outline: 0 !important;
+}
+
+.s-image-square-aspect {
+  padding-top: 100%;
+}
+
+.a-section:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile-img {
+  height: auto;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.avatar-style {
+  top: 5px;
+  right: 0px;
+}
+
+.avatar-button {
+  background-color: #232f3e;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-up {
+  position: absolute;
+  top: -5px;    /* Adjust as necessary */
+  right: -5px;  /* Adjust as necessary */
+  min-width: 1.429rem;
+  min-height: 1.429rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.786rem;
+  line-height: 0.786;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 50%; /* For circular badge shape, if desired */
+  background-color: red; /* Example color, set as per your design */
+  color: white; /* Text color within the badge */
+}
+
+.s-image {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.s-image-overlay-grey:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .03;
+  pointer-events: none;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232f3e;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f5a8f;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.dropdown-toggle {
+  position: relative;
+  /* Add additional styles here */
+}
+
+.user-img {
+  border-radius: 50%;
+  /* Style as needed */
+}
+
+.dropdown-menu-animate {
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.dropdown-menu-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Whenever the dropdown is open, apply the .show class to .dropdown-menu-animate */
+.nav.inNavbar .show {
+  display: block;
+}
+
+.dropdown-menu {
+  z-index: 1000;
+}
+
+.mycart-item {
+  width: 40%;
+  background-color: #c7d0dd;
+  border: 1px solid #232f3e;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-check-input {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 0.25em;
+}
+
+.form-check-input[type=radio] {
+  border-radius: 50%;
+}
+
+.form-check-input:active {
+  filter: brightness(90%);
+}
+
+.form-check-input:focus {
+  border-color: #232f3e;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(81, 104, 133, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #232f3e;
+  border-color: #232f3e;
+}
+
+.form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-check-input[type=checkbox]:indeterminate {
+  background-color: #ffc800;
+  border-color: #ffc800;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+
+.form-check-input:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+
+.form-check-input[disabled]~.form-check-label,
+.form-check-input:disabled~.form-check-label {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.mycart-item-detail {
+  background-color: #c7d0dd;
+  border: 1px solid #232f3e;
+  border-radius: 5px;
+  padding: 25px 5px;
+}
+
+.cart_quantity_button a {
+  background: #F0F0E9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.cart_quantity_input {
+  color: #696763;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cart_quantity_up {
+  background: #F0F0E9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+  text-decoration: none;
+  border: none;
+}
+
+.cart_quantity_down {
+  background: #F0F0E9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+  text-decoration: none;
+  border: none;
+}
+
+.custom-add-to-cart-button,
+.custom-favourite-button {
+  width: 100%;
+  height: 38px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 0.5rem; /* Spacing between buttons */
+}
+
+.custom-add-to-cart-button {
+  background-color: #007bff;
+  border-color: #007bff;
+  /* Rest of your styling specific to add-to-cart button */
+}
+
+.custom-favourite-button {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  /* Rest of your styling specific to favourite button, maybe red theme? */
+}
+
+/* Hover effects */
+.custom-add-to-cart-button:hover,
+.custom-favourite-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Disabled state */
+.custom-add-to-cart-button:disabled,
+.custom-favourite-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Icon style */
+.custom-add-to-cart-button svg,
+.custom-favourite-button svg {
+  margin-right: 0.5rem; /* Spacing between icon and text */
+}
+
+.order-details {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.img-thumbnail {
+  max-width: 100%; /* this ensures the image is responsive */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 5px; /* rounded corners */
+  border: 1px solid #ddd; /* a light grey border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* a subtle shadow around the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transitions for when we hover on the image */
+  margin-bottom: 20px;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05); /* slightly grow the image size */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* a more pronounced shadow on hover */
+}
+
+/* Additional responsive design */
+@media (max-width: 768px) {
+  .order-details {
+      padding: 10px;
+  }
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .custom-add-to-cart-button,
+  .custom-favourite-button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  ul.navbar-nav li .dropdown-menu {
+    width: 100% !important;
+    margin-top: 6px !important;
+  }
+  .auth-btn {
+    width: 100px;
+  }
+}
+
+@media (max-height: 825px) and (max-width: 991.98px) {
+  .auth-wrapper .auth-bg {
+    padding-top: 3rem;
+    margin: auto 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust badge size and position for smaller screens */
+  .badge-up {
+    top: -3px;
+    right: -3px;
+    font-size: 0.7rem;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+  }
+}
